@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget
+    id="id.devkilat.kilattour.KilatTour"
+    pluginWidget="true"
+    needsEntityContext="true"
+    offlineCapable="true"
+    supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Kilat Tour</name>
+    <description>My widget description</description>
+    <icon />
+    <properties>
+        <propertyGroup caption="General">
+            <property key="animate" type="boolean" defaultValue="true">
+                <caption>Animate?</caption>
+                <description>Whether to animate the product tour.</description>
+            </property>
+            <property key="smoothScroll" type="boolean" defaultValue="false">
+                <caption>Smooth Scroll?</caption>
+                <description>Whether to smooth scroll to the highlighted element.</description>
+            </property>
+            <property key="overlayColor" type="string" defaultValue="#000000">
+                <caption>Overlay Color</caption>
+                <description />
+            </property>
+            <property key="overlayOpacity" type="decimal" defaultValue="0.5">
+                <caption>Overlay Color</caption>
+                <description>Opacity of the backdrop</description>
+            </property>
+            <property key="allowClose" type="boolean" defaultValue="true">
+                <caption>Allow Close?</caption>
+                <description>Whether to allow closing the popover by clicking on the backdrop.</description>
+            </property>
+            <property key="autoStart" type="boolean" defaultValue="false">
+                <caption>Auto Start?</caption>
+                <description>Start Tour Automatic</description>
+            </property>
+            <property key="allowKeyboardControl" type="boolean" defaultValue="true">
+                <caption>Allow Keyboard Control?</caption>
+                <description>Whether to allow keyboard navigation</description>
+            </property>
+            <property key="popoverClass" type="string" required="false">
+                <caption>Popover Class</caption>
+                <description>Custom class to the popover</description>
+            </property>
+            <property key="popoverOffset" type="integer" defaultValue="10">
+                <caption>Popover Offset</caption>
+                <description>Distance between the popover and the highlighted element</description>
+            </property>
+            <property key="nextBtnText" type="string" defaultValue="Next">
+                <caption>Next Button Text</caption>
+                <description>Text to show in the next button</description>
+            </property>
+            <property key="prevBtnText" type="string" defaultValue="Prev">
+                <caption>Next Button Text</caption>
+                <description>Text to show in the prev button</description>
+            </property>
+            <property key="doneBtnText" type="string" defaultValue="Done">
+                <caption>Done Button Text</caption>
+                <description>Text to show in the done button</description>
+            </property>
+            <property key="tourIcon" type="icon" required="false">
+                <caption>Icon</caption>
+                <description>Icon for guide floating button</description>
+            </property>
+            <property key="listStep" type="object" isList="true">
+                <caption>List Steps</caption>
+                <description />
+                <properties>
+                    <propertyGroup caption="Object list group">
+                        <property type="string" key="className" required="true">
+                            <caption>Classname</caption>
+                            <description>Classname of dom which will be detected by popup..</description>
+                        </property>
+                        <property type="string" key="title" required="false">
+                            <caption>Title</caption>
+                            <description>Title of popup.</description>
+                        </property>
+                        <property multiline="true" type="string" key="description" required="true">
+                            <caption>Description</caption>
+                            <description>Text of popup.</description>
+                        </property>
+                        <property key="side" type="enumeration" defaultValue="auto" required="true">
+                            <caption>Position (Placement)</caption>
+                            <description>Position of the popover</description>
+                            <enumerationValues>
+                                <enumerationValue key="auto">Auto</enumerationValue>
+                                <enumerationValue key="top">Top</enumerationValue>
+                                <enumerationValue key="bottom">Bottom</enumerationValue>
+                                <enumerationValue key="left">Left</enumerationValue>
+                                <enumerationValue key="right">Right</enumerationValue>
+                            </enumerationValues>
+                        </property>
+                        <property key="align" type="enumeration" defaultValue="auto" required="true">
+                            <caption>Alignment</caption>
+                            <description>Alignment of the popover</description>
+                            <enumerationValues>
+                                <enumerationValue key="auto">Auto</enumerationValue>
+                                <enumerationValue key="start">Start</enumerationValue>
+                                <enumerationValue key="center">Center</enumerationValue>
+                                <enumerationValue key="end">End</enumerationValue>
+                            </enumerationValues>
+                        </property>
+                    </propertyGroup>
+                </properties>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

@@ -1,0 +1,21 @@
+/*
+Place your custom CSS here
+*/
+.floating-tour-btn {
+    position: absolute;
+    right: 3%;
+    bottom: 8%;
+    width: 75px;
+    height: 75px;
+    background-color: lightsalmon;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.floating-tour-btn svg {
+    width: 35px;
+    height: 35px;
+}
