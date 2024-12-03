@@ -17,6 +17,7 @@ export const getSteps = (stepList, autostart) => {
 };
 
 export const convertToStyleObject = style => {
+    if (!style) return {};
     return Object.keys(style).reduce((styleObj, key) => {
         var newKey = key;
         if (key.startsWith("--")) {
