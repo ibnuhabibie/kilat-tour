@@ -8,8 +8,8 @@
     xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>Kilat Tour</name>
-    <description>My widget description</description>
-    <icon />
+    <description>Interactive guided tour widget for creating step-by-step onboarding experiences in your Mendix app.</description>
+    <studioProCategory>Kilat Widgets</studioProCategory>
     <properties>
         <propertyGroup caption="General">
             <property key="animate" type="boolean" defaultValue="true">
